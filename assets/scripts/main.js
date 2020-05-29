@@ -1,5 +1,7 @@
 function load(){
-  changeBackground("assets/images/1.jpg");
+  setTimeout(() => {
+    changeBackground("assets/images/1.jpg");
+  }, 1000);
 }
 
 
