@@ -18,7 +18,7 @@ function changeBackground(){
   console.log("Image picked as a Background: " + imageN)
   setTimeout(() => {
     Boxes();
-  }, 10);
+  }, 100);
 }
 
 
