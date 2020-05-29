@@ -1,0 +1,57 @@
+body {
+    background-color: wheat;
+    font-family: Verdana;
+}
+
+h1, h6 {
+    text-align: center;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    margin:0;
+}
+
+h1 {
+    font-size: 40px;;
+}
+
+h6 {
+    font-size: 20px;
+    padding-bottom: 1%;
+}
+
+a {
+    color: lightblue;
+    text-decoration: inherit;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+canvas {
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    float: left;
+}
+
+table {
+    margin: auto;
+    text-align: center;
+    width: 890px;
+    background: white;
+}
+
+th {
+    width: 100%;
+    text-align: center;
+}
+
+select {
+    text-align-last: center
+}
+
+textarea {
+    resize: none;
+    width: 300px;
+    height: 150px;
+  }

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dauntless Slayer Cards</title>
+    <link rel="icon" type="image/png" href="assets\images\icon.png">
+    <link rel="stylesheet" type="text/css" href="assets\css\main.css">
+
+    <!--Scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="assets\scripts\main.js"></script>
+    
+</head>
+<body onload="load()">
+
+    <h1>Dauntless Slayer Card</h1>
+    <h6>A tool inspired by <a href="https://www.youtube.com/channel/UCmax2BbXdYR4zOfpvD0mMbQ">RevvyRad's</a> Slayer Cards</h6>
+
+
+<!--Canvas-->
+<canvas id="myCanvas" width="954" height="507" style="border:1px solid #d3d3d3;background-color:white;">If this here is visible you need to reload the page</canvas>
+
+<table>
+    <tr>
+    <th style="text-align: center;">Background Image</th>
+    </tr>
+    <td><select name="ImageChanger" id="imageselector" onchange="changeBackground()">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
+        <option value="13">13</option>
+        <option value="14">14</option>
+        <option value="15">15</option>
+        <option value="16">16</option>
+        <option value="17">17</option>
+        <option value="18">18</option>
+        <option value="19">19</option>
+        <option value="20">20</option>
+        <option value="21">21</option>
+    </select></td>
+    <tr>
+        <th>Epic ID</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="EpicID" oninput="Boxes()" maxlength="22"></td>
+    </tr>
+    <tr>
+        <th>Nickname</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="Nickname" oninput="Boxes()" maxlength="22"></td>
+    </tr>
+    <tr>
+        <th>Log-in Time</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="LoginTime" oninput="Boxes()" maxlength="22"></td>
+    </tr>
+    <tr>
+        <th>Platform</th>
+    </tr>
+    <tr>
+        <td><input type="text" id="Platform" oninput="Boxes()" maxlength="22"></td>
+    </tr>
+    <tr>
+        <th>Weapon Selection</th>
+    </tr>
+    <tr>
+        <td><select name="WeaponSelect" id="WSelect" onchange="Boxes()"><option value="Sword">Sword</option><option value="Axe">Axe</option><option value="Repeaters">Repeaters</option><option value="WarPike">War Pike</option><option value="ChainBlades">Chain Blades</option><option value="Hammer">Hammer</option><option value="Strikers">Aether Strikers</option></select></td>
+    </tr>
+    <tr>
+        <th>Bio</th>
+    </tr>
+    <tr>
+        <td><textarea type="text" id="Bio" oninput="Boxes()" maxlength="465"></textarea></td>
+    </tr>
+    </table>
+<div style="display: none;">
+    <img id="Sword" src="assets\images\WeaponImages\Sword.png"><img id="Axe" src="assets\images\WeaponImages\Axe.png"><img id="Chain Blades" src="assets\images\WeaponImages\Chain Blades.png"><img id="Repeaters" src="assets\images\WeaponImages\Repeaters.png"><img id="Hammer" src="assets\images\WeaponImages\Hammer.png"><img id="War Pike" src="assets\images\WeaponImages\War Pike.png"><img id="Strikers" src="assets\images\WeaponImages\Strikers.png"><img id="Logo" src="assets\images\logo.png">
+</div>
+</body>
+</html>
