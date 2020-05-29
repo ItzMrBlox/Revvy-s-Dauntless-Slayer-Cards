@@ -1,8 +1,5 @@
 function load(){
   changeBackground("assets/images/1.jpg");
-  setTimeout(() => {
-    Boxes();
-  }, 10);
 }
 
 
