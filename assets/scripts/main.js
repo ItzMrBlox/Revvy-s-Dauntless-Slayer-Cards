@@ -147,6 +147,7 @@ function Boxes(){
   
     
     wrapText(context, text, x, y, maxWidth, lineHeight);
+    console.log("Boxes function has been activated")
 }
 
 function wrapText(context, text, x, y, maxWidth, lineHeight) {
