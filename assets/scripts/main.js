@@ -1,7 +1,7 @@
 function load(){
   setTimeout(() => {
     changeBackground("assets/images/1.jpg");
-  }, 1000);
+  }, 100);
 }
 
 
@@ -11,7 +11,6 @@ function changeBackground(){
   let ctx=c.getContext("2d");
   var img=new Image();
   img.onload = function(){
-    ctx.save();
         ctx.drawImage(img,0,0,954,507);
   };
   img.src="assets/images/" + imageN + ".jpg";
