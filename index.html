@@ -64,13 +64,63 @@
         <th>Log-in Time</th>
     </tr>
     <tr>
-        <td><input type="text" id="LoginTime" oninput="Boxes()" maxlength="22"></td>
+        <td><select id="StartLoginTime" onchange="Boxes()">
+            <option value="12:00 am">12:00 am</option>
+            <option value="1:00 am">1:00 am</option>
+            <option value="2:00 am">2:00 am</option>
+            <option value="3:00 am">3:00 am</option>
+            <option value="4:00 am">4:00 am</option>
+            <option value="5:00 am">5:00 am</option>
+            <option value="6:00 am">6:00 am</option>
+            <option value="7:00 am">7:00 am</option>
+            <option value="8:00 am">8:00 am</option>
+            <option value="9:00 am">9:00 am</option>
+            <option value="10:00 am">10:00 am</option>
+            <option value="11:00 am">11:00 am</option>
+            <option value="12:00 pm">12:00 pm</option>
+            <option value="1:00 pm">1:00 pm</option>
+            <option value="2:00 pm">2:00 pm</option>
+            <option value="3:00 pm">3:00 pm</option>
+            <option value="4:00 pm">4:00 pm</option>
+            <option value="5:00 pm">5:00 pm</option>
+            <option value="6:00 pm">6:00 pm</option>
+            <option value="7:00 pm">7:00 pm</option>
+            <option value="8:00 pm">8:00 pm</option>
+            <option value="9:00 pm">9:00 pm</option>
+            <option value="10:00 pm">10:00 pm</option>
+            <option value="11:00 pm">11:00 pm</option>
+          </select> - <select id="StopLoginTime" onchange="Boxes()">
+            <option value="12:00 am">12:00 am</option>
+            <option value="1:00 am">1:00 am</option>
+            <option value="2:00 am">2:00 am</option>
+            <option value="3:00 am">3:00 am</option>
+            <option value="4:00 am">4:00 am</option>
+            <option value="5:00 am">5:00 am</option>
+            <option value="6:00 am">6:00 am</option>
+            <option value="7:00 am">7:00 am</option>
+            <option value="8:00 am">8:00 am</option>
+            <option value="9:00 am">9:00 am</option>
+            <option value="10:00 am">10:00 am</option>
+            <option value="11:00 am">11:00 am</option>
+            <option value="12:00 pm">12:00 pm</option>
+            <option value="1:00 pm">1:00 pm</option>
+            <option value="2:00 pm">2:00 pm</option>
+            <option value="3:00 pm">3:00 pm</option>
+            <option value="4:00 pm">4:00 pm</option>
+            <option value="5:00 pm">5:00 pm</option>
+            <option value="6:00 pm">6:00 pm</option>
+            <option value="7:00 pm">7:00 pm</option>
+            <option value="8:00 pm">8:00 pm</option>
+            <option value="9:00 pm">9:00 pm</option>
+            <option value="10:00 pm">10:00 pm</option>
+            <option value="11:00 pm">11:00 pm</option>
+          </select></td>
     </tr>
     <tr>
         <th>Platform</th>
     </tr>
     <tr>
-        <td><input type="text" id="Platform" oninput="Boxes()" maxlength="22"></td>
+        <td><select name="PlatformSelect" id="PfSelect" onchange="Boxes()""><option value="PC">PC</option><option value="PS4">PS4</option><option value="Xbox One">Xbox One</option><option value="Nintendo Switch">Nintendo Switch</option></select></td>
     </tr>
     <tr>
         <th>Weapon Selection</th>
@@ -85,12 +135,11 @@
         <td><textarea type="text" id="Bio" oninput="Boxes()" maxlength="465"></textarea></td>
     </tr>
     <tr>
-        <td>Right-click the image and save the image</td>
+        <td><button id="downloadButton" onclick="downloadButtonClick()">Download</button></td>
     </tr>
     </table>
-<div>
+<div style="display: none;">
     <img id="Sword" src="assets\images\WeaponImages\Sword.png"><img id="Axe" src="assets\images\WeaponImages\Axe.png"><img id="Chain Blades" src="assets\images\WeaponImages\Chain Blades.png"><img id="Repeaters" src="assets\images\WeaponImages\Repeaters.png"><img id="Hammer" src="assets\images\WeaponImages\Hammer.png"><img id="War Pike" src="assets\images\WeaponImages\War Pike.png"><img id="Strikers" src="assets\images\WeaponImages\Strikers.png"><img id="Logo" src="assets\images\logo.png">
-    <img id="BackgroundImage" src="assets\images\1.jpg">
 </div>
 </body>
 </html>
