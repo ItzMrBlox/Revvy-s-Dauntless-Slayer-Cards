@@ -107,10 +107,11 @@ function Boxes(){
   let userNickname = document.getElementById("Nickname").value;
   ctx.fillText(userNickname, 50, 178);
   //Log-in Time
-  let userLogiInTime = document.getElementById("LoginTime").value;
-  ctx.fillText(userLogiInTime, 50, 278);
+  let userLogInTime = document.getElementById("StartLoginTime").value;
+  let userLogOutnTime = document.getElementById("StopLoginTime").value;
+  ctx.fillText(userLogInTime + " - " + userLogOutnTime, 80, 278);
   //Platform
-  let userPlatform = document.getElementById("Platform").value;
+  let userPlatform = document.getElementById("PfSelect").value;
   ctx.fillText(userPlatform, 50, 378);
   let userWeaponSelect = document.getElementById("WSelect").value;
   var userWeaponX = 0;
@@ -140,11 +141,9 @@ function Boxes(){
     var maxWidth = 420;
     var lineHeight = 25;
     var x = 505;
-    var y = 160;
+    var y = 165;
     var text = document.getElementById('Bio').value;
-    
-    context.font = '16pt Calibri';
-    context.fillStyle = '#333';
+  
     
     wrapText(context, text, x, y, maxWidth, lineHeight);
 }
@@ -167,4 +166,22 @@ function wrapText(context, text, x, y, maxWidth, lineHeight) {
     }
   }
   context.fillText(line, x, y);
+}
+
+// Convert canvas to image
+function downloadButtonClick(){
+  var canvas = document.getElementById('myCanvas');
+
+  var dataURL = canvas.toDataURL("image/jpeg", 1.0);
+
+  downloadImage(dataURL, 'SlayerCard.jpeg');
+};
+
+// Save | Download image
+function downloadImage(data, filename = 'untitled.jpeg') {
+  var a = document.createElement('a');
+  a.href = data;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
 }
