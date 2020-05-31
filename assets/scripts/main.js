@@ -2,6 +2,7 @@ function load(){
   setTimeout(() => {
     changeBackground("assets/images/1.jpg");
   }, 100);
+  Boxes();
 }
 
 
