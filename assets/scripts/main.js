@@ -1,7 +1,7 @@
 function load(){
   setTimeout(() => {
     changeBackground("assets/images/1.jpg");
-  }, 100);
+  }, 10);
   Boxes();
 }
 
@@ -18,7 +18,7 @@ function changeBackground(){
   console.log("Image picked as a Background: " + imageN)
   setTimeout(() => {
     Boxes();
-  }, 100);
+  }, 10);
 }
 
 
