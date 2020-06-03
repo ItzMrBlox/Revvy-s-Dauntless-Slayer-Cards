@@ -1,9 +1,28 @@
 function load(){
-  for (let index = 0; index < 20; index++) {
+  var backgrounds = 27;
+  //Adding Images for Weapons
+  let arrayWeapon = ["Sword", "Axe", "Repeaters", "War Pike", "Chain Blades", "Hammer", "Strikers"];
+  for (let index = 0; index < arrayWeapon.length; index++) {
     var img = document.createElement('img'); 
+    img.src =  'assets/images/WeaponImages/'+ arrayWeapon[index] +'.png'; 
+    img.setAttribute("id", arrayWeapon[index]);
+    document.getElementById('hiddenStuff').appendChild(img);
+  }
+  //Adding Images for backgrounds
+  for (let index = 0; index < backgrounds; index++) {
+    let img = document.createElement('img'); 
     img.src =  'assets/images/'+ index +'.jpg'; 
     document.getElementById('hiddenStuff').appendChild(img);
   }
+  //Options adding
+  for (let index = 0; index < backgrounds; index++) {
+  let backgroundsAmount = document.getElementById("imageselector");
+  let option = document.createElement("option");
+  option.setAttribute("value", index+1);
+  option.text = index+1;
+  backgroundsAmount.add(option);
+  }
+  
   setTimeout(() => {
     changeBackground("assets/images/1.jpg");
   }, 1000);
