@@ -1,7 +1,12 @@
 function load(){
+  for (let index = 0; index < 20; index++) {
+    var img = document.createElement('img'); 
+    img.src =  'assets/images/'+ index +'.jpg'; 
+    document.getElementById('hiddenStuff').appendChild(img);
+  }
   setTimeout(() => {
     changeBackground("assets/images/1.jpg");
-  }, 10);
+  }, 1000);
   Boxes();
 }
 
